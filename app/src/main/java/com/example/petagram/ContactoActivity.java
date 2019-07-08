@@ -45,7 +45,7 @@ public class ContactoActivity extends AppCompatActivity {
                 String correo = tvCorreo.getText().toString();
                 String mensaje = tvMensaje.getText().toString();
 
-                final String email = "aranda.117318@gmail.com",pass="tikvpzgcflfinyck";
+                final String email = "CAMBIARCORREO",pass="CAMBIARCONTRASEÑA";
                 Properties props = new Properties();
 
                 props.put("mail.smtp.auth", "true");
@@ -66,7 +66,7 @@ public class ContactoActivity extends AppCompatActivity {
                     MimeMessage msg = new MimeMessage(session);
                     msg.setFrom(email);
                     msg.setRecipients(Message.RecipientType.TO,
-                            InternetAddress.parse("aranda.117318@gmail"));
+                            InternetAddress.parse("cambiar.correo@gmail"));
                     msg.addRecipient(Message.RecipientType.CC, new InternetAddress(
                             correo));
                     msg.setSubject(subject);
